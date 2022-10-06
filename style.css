@@ -1,0 +1,126 @@
+
+body{
+    font-family: 'Gemunu Libre', sans-serif;
+    margin: 10px;
+    border-radius: 5px;
+    background: linear-gradient(rgba(200,200,200,0.5),rgba(255,255,255,0.5)), url(imagenes/bg.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1{
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: .5em;
+}
+.calavera{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0.25em;
+}
+
+.nuevoJuego, .agregarPalabras{
+    margin:60px auto;
+    padding: 15px;
+    width: 40%;
+    font-size: 18px;
+    color: beige;
+    font-weight: bold;
+    background: #0A3871;
+    border: none;
+    border-radius: 7px;
+    transition: 500ms;
+    cursor: pointer;
+    display: block; 
+}
+
+
+.agregarPalabras:hover, .nuevoJuego:hover{
+    transform: scale(1.1);
+}
+
+.canvas{
+    text-align: center;   
+}
+
+canvas{
+    border-radius: 7px;
+    
+}
+.tableroJuego{
+    text-align: center;
+}
+
+.inputOcultos{
+    font-size: 28px;
+    color: transparent;
+    background-image: url(imagenes/teclado.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    width: 62px;
+    height: 38px;
+}
+.inputOcultos::placeholder{
+    color: #000000;
+}
+.otroJuego, .terminarJuego, .guardarPalabra, .guardarIniciar, .salir, .volverJugar, .salirJuego{
+    margin: 10px auto;
+    padding: 15px;
+    width: 40%;
+    font-size: 15px;
+    color: beige;
+    font-weight: bold;
+    background: #0A3871;
+    border: none;
+    border-radius: 7px;
+    display: block;
+}
+
+
+.tableroPalabras{
+    display: block;
+    text-align: center;
+}
+
+.palabraNueva{
+    font-size: 30px;
+    color: #000000;
+    background: none;
+    border: none;
+}
+
+
+.palabraNueva::placeholder{
+    color: black;
+}
+
+#ventanaGanaste, #ventanaPerdiste{
+    width: 40%;
+    min-height: auto;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#ventanaGanaste, #ventanaPerdiste{
+    text-align: center;
+}
+
+.win, .gameOver{
+    width: 100%;
+}
+
+
+footer{
+    text-align: center;
+    color: black;
+    padding: 30px; 
+    font-weight: bold;
+}
